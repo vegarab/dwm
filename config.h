@@ -15,8 +15,8 @@ static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows sel
 static const unsigned int systrayspacing = 2;   /* systray spacing */
 static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
 static const int showsystray        = 1;     /* 0 means no systray */
-static const char *fonts[]          = { "monospace:size=15", "JoyPixels:pixelsize=15:antialias=true:autohint=true"  };
-static char dmenufont[]             = "monospace:size=15";
+static const char *fonts[]          = { "monospace:size=9", "JoyPixels:pixelsize=12:antialias=true:autohint=true"  };
+static char dmenufont[]             = "monospace:size=9";
 static char normbgcolor[]           = "#282828";
 static char normbordercolor[]       = "#282828";
 //static char normfgcolor[]           = "#928374";
@@ -154,7 +154,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_i,	 		setlayout, 		{.v = &layouts[7]} }, /* centeredfloatingmaster */
 	{ MODKEY,				XK_o,	 	  	incnmaster,     {.i = +1 } },
 	{ MODKEY|ShiftMask,		XK_o,	 		incnmaster,     {.i = -1 } },
-	{ MODKEY,				XK_p,			spawn,		 	SHCMD("mpc toggle") },
+	{ MODKEY,				XK_p,			spawn,		 	SHCMD("passmenu") },
 	{ MODKEY|ShiftMask,		XK_p,			spawn,		 	SHCMD("mpc pause ; pauseallmpv") },
 	{ MODKEY,				XK_bracketleft,	spawn,		 	SHCMD("mpc seek -10") },
 	{ MODKEY|ShiftMask,		XK_bracketleft,	spawn,		 	SHCMD("mpc seek -60") },
